@@ -1,0 +1,22 @@
+[package]
+name = "heartburn-ffi"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "UniFFI bindings for heartburn-core (Android Kotlin integration)"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "heartburn_ffi"
+
+[features]
+default = []
+firefox-tls = ["heartburn-core/firefox-tls"]
+
+[dependencies]
+heartburn-core = { path = "../heartburn-core" }
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+uniffi.workspace = true

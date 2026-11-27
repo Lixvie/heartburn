@@ -1,0 +1,55 @@
+[package]
+name = "heartburn-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Core proxy engine for Heartburn"
+
+[features]
+default = []
+firefox-tls = [
+    "dep:boring2",
+    "dep:brotli-decompressor",
+    "dep:flate2",
+    "dep:tokio-boring2",
+]
+
+[dependencies]
+aes-gcm.workspace = true
+base64.workspace = true
+boring2 = { workspace = true, optional = true }
+brotli-decompressor = { workspace = true, optional = true }
+bytes.workspace = true
+flate2 = { workspace = true, optional = true }
+futures.workspace = true
+h2.workspace = true
+h3.workspace = true
+h3-quinn.workspace = true
+hex.workspace = true
+hkdf.workspace = true
+hmac.workspace = true
+http.workspace = true
+http-body-util.workspace = true
+hyper.workspace = true
+hyper-util.workspace = true
+pbkdf2.workspace = true
+percent-encoding.workspace = true
+quinn.workspace = true
+rand.workspace = true
+ring.workspace = true
+rustls.workspace = true
+rustls-pemfile.workspace = true
+rustls-pki-types.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+socket2.workspace = true
+thiserror.workspace = true
+time.workspace = true
+tokio.workspace = true
+tokio-boring2 = { workspace = true, optional = true }
+tokio-rustls.workspace = true
+tokio-util.workspace = true
+tracing.workspace = true
+url.workspace = true
+webpki-roots.workspace = true

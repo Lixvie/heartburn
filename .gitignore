@@ -1,0 +1,45 @@
+# Build artifacts
+/target/
+target/
+**/*.rs.bk
+*.pdb
+
+# Sensitive runtime / account state & local data directories
+user-data/
+**/user-data/
+test-data/
+**/test-data/
+test_data/
+**/test_data/
+tmp-data/
+**/tmp-data/
+*test-data*/
+*.key
+credentials.json
+config.json
+account.json
+state.json
+status.json
+selection.json
+servers.json
+guardian-route.json
+*.corrupt
+
+# Local environment, scratch files & debug logs
+.env
+.env.*
+*.log
+scratch/
+**/scratch/
+tmp/
+**/tmp/
+.tmp/
+*.tmp
+*.bak
+*.swp
+captcha-*
+heartburn-captcha-*
+
+# OS cruft
+.DS_Store
+Thumbs.db
